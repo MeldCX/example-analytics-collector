@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meldCX Device Analytics Collector</title>
+    <script src="https://storage.googleapis.com/assets.meld.cx/agent/1.0.42/Agent.js"></script>
+    <style>
+        body {
+            margin: 0 0 0 0;
+            background-color: #112747;
+        }
+
+        h1 {
+            color: white;
+            font-family: 'Varela Round', sans-serif;
+        }
+
+        .flex {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 60vh;
+            width: 100vw;
+        }
+
+        .right {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        img {
+            height: 72px;
+            padding-top: 10px;
+            padding-right: 10px;
+        }
+
+        button {
+            width: 300px;
+            height: 50px;
+            font-size: 18px;
+            color: #112747;
+            cursor: pointer;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="right">
+        <img src="logo.png" alt="logo"/>
+    </div>
+    <div class="flex">
+        <h1>Analytics Logs Collector</h1>
+        <button>Save Analytics Logs</button>
+        <div id="output"></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
